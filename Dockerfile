@@ -1,5 +1,7 @@
 FROM alpine:3.5
 
+MAINTAINER mateuszmoneta@gmail.com
+
 ENV VARNISH_VERSION='4.1.3-r0'
 
 RUN apk add --update --no-cache varnish=$VARNISH_VERSION gettext wget && \
