@@ -1,8 +1,8 @@
-FROM alpine:3.5
+FROM alpine:3.7
 
 MAINTAINER mateuszmoneta@gmail.com
 
-ENV VARNISH_VERSION='4.1.3-r0'
+ENV VARNISH_VERSION='5.2.1-r0'
 
 RUN apk add --update --no-cache varnish=$VARNISH_VERSION varnish-dev=$VARNISH_VERSION gettext wget && \
     wget --no-check-certificate https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 -O /usr/local/bin/dumb-init && \
